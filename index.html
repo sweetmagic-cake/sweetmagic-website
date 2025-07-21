@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -11,16 +10,18 @@
       font-family: 'Cairo', sans-serif;
       text-align: center;
       margin: 0;
-      padding: 0;
       color: #6b1f45;
-    }
-    .container {
-      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
     img.logo {
       width: 240px;
+      margin: 20px auto;
+      display: block;
       border-radius: 20px;
-      margin-bottom: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     h1 {
@@ -71,20 +72,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="شعار Sweet Magic" class="logo">
-    <h1>Sweet Magic</h1>
-    <p class="description">كيك - دونات - تحليات... نكهات سحرية تأسر الحواس</p>
-    <button class="button">اطلب الآن</button>
+  <img src="logo.png" alt="شعار Sweet Magic" class="logo">
+  <h1>Sweet Magic</h1>
+  <p class="description">حلويات راقية - كيكات مميزة - نكهات فاخرة تُحاكي السحر</p>
+  <button class="button">اطلب الآن</button>
 
-    <div class="social-icons">
-      <a href="#"><img src="instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="tiktok.png" alt="TikTok"></a>
-    </div>
-
-    <footer>
-      &copy; 2025 Sweet Magic - جميع الحقوق محفوظة
-    </footer>
+  <div class="social-icons">
+    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="tiktok.png" alt="TikTok"></a>
   </div>
+
+  <footer>
+    &copy; 2025 Sweet Magic - جميع الحقوق محفوظة
+  </footer>
 </body>
 </html>
