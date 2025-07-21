@@ -3,38 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <title>Sweet Magic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #fff0f5;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Cairo', sans-serif;
       text-align: center;
-      padding: 50px;
+      padding: 0;
+      margin: 0;
       color: #6b1f45;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1.2s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img.logo {
+      width: 240px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1.4s ease-in;
+    }
+
     h1 {
       font-size: 3em;
+      font-family: 'Pacifico', cursive;
       margin-bottom: 10px;
+      animation: fadeIn 1.6s ease-in;
     }
-    p {
-      font-size: 1.5em;
+
+    p.description {
+      font-size: 1.3em;
+      margin-bottom: 20px;
       color: #8b4a60;
+      animation: fadeIn 1.8s ease-in;
     }
-    img {
+
+    .button {
+      background: linear-gradient(135deg, #ff69b4, #ec407a);
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease-in;
+    }
+
+    .button:hover {
+      background: linear-gradient(135deg, #d81b60, #ad1457);
+      transform: scale(1.05);
+    }
+
+    .social-icons {
       margin-top: 30px;
-      width: 200px;
+      animation: fadeIn 2.2s ease-in;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    .social-icons img {
+      width: 36px;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #aaa;
+      animation: fadeIn 2.4s ease-in;
     }
   </style>
 </head>
 <body>
-
+  <img src="logo.png" alt="شعار Sweet Magic" class="logo">
   <h1>Sweet Magic</h1>
-  <p>كيك - دونات - تحليات... نكهات سحرية تأسر الحواس</p>
+  <p class="description">كيك - دونات - تحليات... نكهات سحرية تأسر الحواس</p>
+  <button class="button">اطلب الآن</button>
 
-<img src="logo.png.png" alt="Sweet Magic Logo">
+  <div class="social-icons">
+    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+  </div>
 
-
-
-
-
+  <footer>
+    &copy; 2025 Sweet Magic - جميع الحقوق محفوظة
+  </footer>
 </body>
 </html>
